@@ -35,32 +35,32 @@ function Technologies() {
             <u>Technologies I Can Work On</u>
           </MKTypography>
         </Grid>
-        <Grid container spacing={3} sx={{ mt: 3 }}>
-          <Grid className="logos" item xs={6} md={4} lg={1.2}>
+        <Grid container spacing={5} sx={{ mt: 2 }}>
+          <Grid className="logos" item xs={3} md={3} lg={1.3}>
             <MKBox component="img" src={c} alt="c" width="100%" opacity={0.9} />
           </Grid>
-          <Grid className="logos" item xs={6} md={4} lg={1.2}>
+          <Grid className="logos" item xs={3} md={3} lg={1.3}>
             <MKBox component="img" src={cpp} alt="cpp" width="100%" opacity={0.9} />
           </Grid>
-          <Grid className="logos" item xs={6} md={4} lg={1.2}>
+          <Grid className="logos" item xs={3} md={3} lg={1.3}>
             <MKBox component="img" src={java} alt="java" width="100%" opacity={0.9} />
           </Grid>
-          <Grid className="logos" item xs={6} md={4} lg={1.2}>
+          <Grid className="logos" item xs={3} md={3} lg={1.3}>
             <MKBox component="img" src={javascript} alt="javascript" width="100%" opacity={0.9} />
           </Grid>
-          <Grid className="logos" item xs={6} md={4} lg={1.2}>
+          <Grid className="logos" item xs={3} md={3} lg={1.3}>
             <MKBox component="img" src={kotlin} alt="kotlin" width="100%" opacity={0.9} />
           </Grid>
-          <Grid className="logos" item xs={6} md={4} lg={1.2}>
+          <Grid className="logos" item xs={3} md={3} lg={1.3}>
             <MKBox component="img" src={ui5} alt="ui5" width="100%" opacity={0.9} />
           </Grid>
-          <Grid className="logos" item xs={6} md={4} lg={1.2}>
+          <Grid className="logos" item xs={3} md={3} lg={1.3}>
             <MKBox component="img" src={node} alt="node" width="100%" opacity={0.9} />
           </Grid>
-          <Grid className="logos" item xs={6} md={4} lg={1.2}>
+          <Grid className="logos" item xs={3} md={3} lg={1.3}>
             <MKBox component="img" src={python} alt="ui5" width="100%" opacity={0.9} />
           </Grid>
-          <Grid className="logos" item xs={6} md={4} lg={1.2}>
+          <Grid className="logos" item xs={3} md={3} lg={1.3}>
             <MKBox component="img" src={react} alt="ui5" width="100%" opacity={0.9} />
           </Grid>
         </Grid>
