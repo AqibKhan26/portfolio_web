@@ -8,6 +8,7 @@ import CssBaseline from "@mui/material/CssBaseline";
 // Material Kit 2 React themes
 import theme from "./assets/theme";
 import About from './sections/about/About';
+import Technologies from './sections/technologies/Technologies';
 
 
 function App() {
@@ -42,6 +43,9 @@ function App() {
     </section>
     <section className="about" id='about'>
       <About />
+    </section>
+    <section className="technologies" id='technologies'>
+      <Technologies />
     </section>
   </ThemeProvider>
   );

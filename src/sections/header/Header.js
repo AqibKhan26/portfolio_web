@@ -38,21 +38,41 @@ function Header() {
   document.addEventListener("scroll", function () {
     const navbar = document.querySelector("nav");
     const about = document.querySelector("section.about");
+    const tech = document.querySelector("section.technologies");
     const aboutNav = document.querySelector("div.aboutNavLink");
     const homeNav = document.querySelector("div.headerNavLink");
+    const techNav = document.querySelector("div.techNavLink");
 
-    const distanceFromTopsection =
+    const distanceFromTopSectionAbout =
       about.getBoundingClientRect().top;
 
-    if (distanceFromTopsection < 40) {
+    const distanceFromTopSectionTech =
+      tech.getBoundingClientRect().top;
+
+    //Navbar fix condition
+    if (distanceFromTopSectionAbout < 40) {
       navbar.classList.add("fixed-top");
-      aboutNav.classList.add("active");
-      homeNav.classList.remove("active");
     }
     else {
       navbar.classList.remove("fixed-top");
+    }
+
+    //Navbar
+
+    console.log(distanceFromTopSectionAbout,distanceFromTopSectionTech)
+    if (distanceFromTopSectionAbout < 40 && distanceFromTopSectionAbout > -550) {
+      aboutNav.classList.add("active");
+      homeNav.classList.remove("active");
+      techNav.classList.remove("active");
+    }
+    else if(distanceFromTopSectionAbout < -550){
+      aboutNav.classList.remove("active");
+      homeNav.classList.remove("active");
+      techNav.classList.add("active");
+    } else {
       aboutNav.classList.remove("active");
       homeNav.classList.add("active");
+      techNav.classList.remove("active");
     }
   });
 
@@ -61,7 +81,7 @@ function Header() {
     const navbar = document.querySelector("nav");
     const navDiv = document.querySelector("div.link-wrap");
 
-    console.log(navbar,navDiv)
+    console.log(navbar, navDiv)
 
     if (navDiv.className === "link-wrap") {
       navDiv.classList.add("mobile");
@@ -127,7 +147,7 @@ function Header() {
           <div className="link-wrap">
             <div className="page-link headerNavLink" ><a className="navLink" href="#header">Home</a></div>
             <div className="page-link aboutNavLink" ><a className="navLink" href="#about">about</a></div>
-            <div className="page-link techNavLink" ><a className="navLink" href="#about">technologies</a></div>
+            <div className="page-link techNavLink" ><a className="navLink" href="#technologies">technologies</a></div>
             <div className="page-link" >blog</div>
             <div className="page-link" >contact</div>
           </div>
