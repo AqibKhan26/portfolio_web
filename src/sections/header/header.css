@@ -1,0 +1,113 @@
+.videoTag {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    object-fit: contain;
+}
+
+.highlitedText {
+    color: #cb7b75;
+}
+
+.buttonMain {
+    align-items: center;
+    text-align: center;
+    width: 50%;
+}
+
+nav {
+    bottom: 0;
+    left: 0;
+    position: relative;
+    background: black;
+    border-bottom: 3px solid #cc7064;
+    height: 45px;
+    text-align: left;
+    width: 100%;
+    z-index: 99;
+}
+
+nav.fixed-top {
+    position: fixed;
+    top: 0%;
+}
+
+.link-wrap {
+    background: none;
+    height: initial;
+    overflow: visible;
+    position: initial;
+    text-align: left;
+    color: white;
+}
+
+nav .link-wrap div {
+    display: inline;
+    font-size: initial;
+    margin: 5px 20px;
+    padding: initial;
+}
+
+nav .link-wrap div {
+    cursor: pointer;
+    font-size: 12pt;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    transition: color 0.5s;
+}
+
+nav .active {
+    color: #e31b6d;
+}
+
+.navLink {
+    text-decoration: none;
+    color: inherit;
+}
+
+.menuMd{
+    display: none;
+}
+
+@media (max-width: 500px) {
+
+    nav.mobile {
+        bottom: 0;
+        left: 0;
+        position: relative;
+        background: black;
+        border-bottom: 3px solid #cc7064;
+        height: 350px;
+        text-align: center;
+        width: 100%;
+        z-index: 99;
+    }
+
+    nav.fixed-top {
+        position: fixed;
+        top: 0%;
+    }   
+
+    div.link-wrap.mobile{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    div.link-wrap{
+        display: none;
+    }
+
+    .menuMd{
+        display: flex;
+        padding-top: 12px;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-right: 12px;
+        color: white;
+        cursor: pointer;
+    }
+    
+
+}
