@@ -148,8 +148,8 @@ function Header() {
             <div className="page-link headerNavLink" ><a className="navLink" href="#header">Home</a></div>
             <div className="page-link aboutNavLink" ><a className="navLink" href="#about">about</a></div>
             <div className="page-link techNavLink" ><a className="navLink" href="#technologies">technologies</a></div>
-            <div className="page-link" >blog</div>
-            <div className="page-link" >contact</div>
+            <div className="page-link" >projects</div>
+            <div className="page-link contactNavLink" ><a className="navLink" href="#contact">contact</a></div>
           </div>
         </nav>
       </MKBox>

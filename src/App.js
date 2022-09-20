@@ -9,6 +9,8 @@ import CssBaseline from "@mui/material/CssBaseline";
 import theme from "./assets/theme";
 import About from './sections/about/About';
 import Technologies from './sections/technologies/Technologies';
+import Contact from './sections/contact/Contact';
+import Footer from './sections/footer/Footer';
 
 
 function App() {
@@ -46,6 +48,12 @@ function App() {
     </section>
     <section className="technologies" id='technologies'>
       <Technologies />
+    </section>
+    <section className="contact" id='contact'>
+      <Contact />
+    </section>
+    <section className="footer" id='footer'>
+      <Footer />
     </section>
   </ThemeProvider>
   );

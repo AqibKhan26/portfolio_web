@@ -15,6 +15,7 @@ Coded by www.creative-tim.com
 
 // prop-types is a library for typechecking of props
 import PropTypes from "prop-types";
+import "./footer.css"
 
 // @mui material components
 import Link from "@mui/material/Link";
@@ -22,20 +23,14 @@ import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
 
 // @mui icons
-import FacebookIcon from "@mui/icons-material/Facebook";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import PinterestIcon from "@mui/icons-material/Pinterest";
-import GitHubIcon from "@mui/icons-material/GitHub";
+
 
 // Material Kit 2 React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
+import MKBox from "../../../components/MKBox";
+import MKTypography from "../../../components/MKTypography";
+import logo from "../../../assets/images/logoTab.png"
 
 function CenteredFooter({ company, links, socials, light }) {
-  const { href, name } = company;
-
-  const year = new Date().getFullYear();
 
   const renderLinks = links.map((link) => (
     <MKTypography
@@ -65,73 +60,47 @@ function CenteredFooter({ company, links, socials, light }) {
 
   return (
     <MKBox component="footer" py={6}>
-      <Grid container justifyContent="center">
-        <Grid item xs={10} lg={8}>
-          <Stack
-            direction="row"
-            flexWrap="wrap"
-            justifyContent="center"
-            spacing={{ xs: 2, lg: 3, xl: 6 }}
-            mb={3}
-          >
-            {renderLinks}
-          </Stack>
+      {/* <Grid container xs={12} lg={8} sx={{ textAlign: "center" }} justifyContent="center">
+        <Grid className="aqibLogo" sx={{ textAlign: "center" }}>
+        <MKTypography variant="body2" color={light ? "white" : "secondary"}>
+          <span className="madeBy">Made by</span>
+        </MKTypography>
+        <MKBox component="img" src={logo} alt="Aqib Khan" title="Aqib Khan" width="100px" opacity={0.9} justifyContent="center  "/>
         </Grid>
+        <MKTypography variant="body2" color={light ? "white" : "secondary"}>
+          <MKTypography
+            component={Link}
+            target="_blank"
+            rel="noreferrer"
+            variant="body2"
+            color={light ? "white" : "secondary"}
+          >
+          </MKTypography>
+          .
+        </MKTypography>
+      </Grid> */}
+      <Grid container justifyContent="center">
+        <MKTypography variant="body2" color={light ? "white" : "secondary"}>
+          <span className="madeBy">Made by</span>
+        </MKTypography>
+      </Grid>
+      <Grid container justifyContent="center">
+        <MKBox component="img" src={logo} alt="Aqib Khan" title="Aqib Khan" width="100px" opacity={0.9} justifyContent="center  " />
+        <div className="logoNameDiv">
+          <span className="logoName">Aqib Khan</span>
+        </div>
+      </Grid>
+      <Grid container justifyContent="center">
         <Grid item xs={12} lg={8}>
           <Stack display="flex" direction="row" justifyContent="center" spacing={3} mt={1} mb={3}>
             {renderSocials}
           </Stack>
-        </Grid>
-        <Grid item xs={12} lg={8} sx={{ textAlign: "center" }}>
-          <MKTypography variant="body2" color={light ? "white" : "secondary"}>
-            Copyright &copy; {year} Material by{" "}
-            <MKTypography
-              component={Link}
-              href={href}
-              target="_blank"
-              rel="noreferrer"
-              variant="body2"
-              color={light ? "white" : "secondary"}
-            >
-              {name}
-            </MKTypography>
-            .
-          </MKTypography>
         </Grid>
       </Grid>
     </MKBox>
   );
 }
 
-// Setting default values for the props of CenteredFooter
-CenteredFooter.defaultProps = {
-  company: { href: "https://www.creative-tim.com/", name: "Creative Tim" },
-  links: [
-    { href: "https://www.creative-tim.com/", name: "Company" },
-    { href: "https://www.creative-tim.com/presentation", name: "About Us" },
-    { href: "https://www.creative-tim.com/presentation", name: "Team" },
-    { href: "https://www.creative-tim.com/templates/react", name: "Products" },
-    { href: "https://www.creative-tim.com/blog", name: "Blog" },
-    { href: "https://www.creative-tim.com/license", name: "License" },
-  ],
-  socials: [
-    { icon: <FacebookIcon fontSize="small" />, link: "https://www.facebook.com/CreativeTim/" },
-    {
-      icon: <TwitterIcon fontSize="small" />,
-      link: "https://twitter.com/creativetim",
-    },
-    {
-      icon: <InstagramIcon fontSize="small" />,
-      link: "https://www.instagram.com/creativetimofficial/",
-    },
-    {
-      icon: <PinterestIcon fontSize="small" />,
-      link: "https://ro.pinterest.com/thecreativetim/",
-    },
-    { icon: <GitHubIcon fontSize="small" />, link: "https://github.com/creativetimofficial" },
-  ],
-  light: false,
-};
 
 // Typechecking props for the CenteredFooter
 CenteredFooter.propTypes = {
@@ -141,4 +110,4 @@ CenteredFooter.propTypes = {
   light: PropTypes.bool,
 };
 
-export default CenteredFooter;
+export default CenteredFooter;  
