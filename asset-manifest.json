@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/portfolio_web/static/css/main.f53ee2bd.css",
+    "main.js": "/portfolio_web/static/js/main.75c4e3b4.js",
+    "static/media/bgVideo.gif": "/portfolio_web/static/media/bgVideo.e2b651445030c0669759.gif",
+    "static/media/rotating-card-bg-front.jpeg": "/portfolio_web/static/media/rotating-card-bg-front.bdcdfadc0dacb9bc5f23.jpeg",
+    "static/media/wwwBg.jpg": "/portfolio_web/static/media/wwwBg.d5ba7878fa18e11f49cd.jpg",
+    "static/media/contactme.jpg": "/portfolio_web/static/media/contactme.bb89d838b863234d04ca.jpg",
+    "static/media/solsticeLogo.jpeg": "/portfolio_web/static/media/solsticeLogo.2a33fcdd680394f5bdcd.jpeg",
+    "static/media/WaterSpoutWallet.jpeg": "/portfolio_web/static/media/WaterSpoutWallet.44f68f7b264b2083bcc2.jpeg",
+    "static/media/uproar.jpeg": "/portfolio_web/static/media/uproar.cf07ae0c1069227ef619.jpeg",
+    "static/media/logoTab.png": "/portfolio_web/static/media/logoTab.cf7bc34caa052c74484c.png",
+    "static/media/jenkins.svg": "/portfolio_web/static/media/jenkins.81782ff96211925e0ddc74d211e5e8ca.svg",
+    "static/media/sapLabs.png": "/portfolio_web/static/media/sapLabs.5cf32810ae8f21737966.png",
+    "static/media/node.svg": "/portfolio_web/static/media/node.f163cddfbfe49648deb1ce8917207b77.svg",
+    "static/media/python.svg": "/portfolio_web/static/media/python.441fb91d8cb3b0b5324d2f537e4fc9aa.svg",
+    "static/media/groovy.svg": "/portfolio_web/static/media/groovy.5375741e42a9177b9eb16734ab65b767.svg",
+    "static/media/ui5.svg": "/portfolio_web/static/media/ui5.b86fdf5c692ac1ce99fb156b98fc5796.svg",
+    "static/media/gradle.svg": "/portfolio_web/static/media/gradle.bf647a67b024d15e834c03aee380f5b2.svg",
+    "static/media/react.svg": "/portfolio_web/static/media/react.c60e072461a29d9c38291223075ac016.svg",
+    "static/media/java.svg": "/portfolio_web/static/media/java.799fbfb5362634b5a8d18a3f23fbed67.svg",
+    "static/media/pandasLogo.svg": "/portfolio_web/static/media/pandasLogo.58bc29defd2fa9ef6079e14589f135a8.svg",
+    "static/media/cpp.svg": "/portfolio_web/static/media/cpp.85764760e8087daab71afe215fa8d8f8.svg",
+    "static/media/kotlin.svg": "/portfolio_web/static/media/kotlin.9dfc74a1b017324341dac0dba48cca92.svg",
+    "static/media/git.svg": "/portfolio_web/static/media/git.3ac9a6169cd58c66df206f965721cfb3.svg",
+    "static/media/c.svg": "/portfolio_web/static/media/c.bfe10c09d91b35d93af8de3b753a8ca5.svg",
+    "static/media/r.svg": "/portfolio_web/static/media/r.83af4f94711912c3d8fe3b680aed9885.svg",
+    "static/media/firebase.svg": "/portfolio_web/static/media/firebase.ecddc65b1dd6d0decdf5b629717b2f05.svg",
+    "index.html": "/portfolio_web/index.html",
+    "static/media/javascript.svg": "/portfolio_web/static/media/javascript.cb6c28ae8b07ac4ffe29cee2352650dd.svg",
+    "static/media/express.svg": "/portfolio_web/static/media/express.17d6aefdd7235ab2cf8881c1b03ad312.svg",
+    "static/media/dots.svg": "/portfolio_web/static/media/dots.0eedaa2f9fa6b37de002b0397f47125d.svg",
+    "main.f53ee2bd.css.map": "/portfolio_web/static/css/main.f53ee2bd.css.map",
+    "main.75c4e3b4.js.map": "/portfolio_web/static/js/main.75c4e3b4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f53ee2bd.css",
+    "static/js/main.75c4e3b4.js"
+  ]
+}
