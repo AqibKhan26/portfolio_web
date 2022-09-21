@@ -16,12 +16,8 @@ Coded by www.creative-tim.com
 // prop-types is a library for typechecking of props.
 import PropTypes from "prop-types";
 
-// @mui material components
-import Icon from "@mui/material/Icon";
-
 // Material Kit 2 React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
+import MKBox from "../../../components/MKBox";
 
 function RotatingCardFront({ color, image, icon, title, description }) {
   return (
@@ -32,30 +28,23 @@ function RotatingCardFront({ color, image, icon, title, description }) {
       borderRadius="lg"
       coloredShadow={color}
       width="100%"
+      height="100%"
       position="relative"
       zIndex={2}
       sx={{
         backgroundImage: ({ palette: { gradients }, functions: { linearGradient, rgba } }) =>
           `${linearGradient(
-            rgba(gradients[color] ? gradients[color].main : gradients.info.main, 0.85),
-            rgba(gradients[color] ? gradients[color].main : gradients.info.main, 0.85)
+            rgba(gradients[color] ? gradients[color].main : gradients.info.main, 0),
+            rgba(gradients[color] ? gradients[color].main : gradients.info.main, 0)
           )}, url(${image})`,
         backgroundSize: "cover",
         backfaceVisibility: "hidden",
       }}
     >
-      <MKBox py={12} px={3} textAlign="center" lineHeight={1}>
-        {icon && (
-          <MKTypography variant="h2" color="white" my={2}>
-            {typeof icon === "string" ? <Icon>{icon}</Icon> : icon}
-          </MKTypography>
-        )}
-        <MKTypography variant="h3" color="white" gutterBottom>
-          {title}
-        </MKTypography>
-        <MKTypography variant="body2" color="white" opacity={0.8}>
-          {description}
-        </MKTypography>
+      <MKBox py={25} px={3} textAlign="center" lineHeight={1}>
+        {/* <div>
+
+        </div> */}
       </MKBox>
     </MKBox>
   );

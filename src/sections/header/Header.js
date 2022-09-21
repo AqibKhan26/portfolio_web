@@ -39,15 +39,24 @@ function Header() {
     const navbar = document.querySelector("nav");
     const about = document.querySelector("section.about");
     const tech = document.querySelector("section.technologies");
+    const projects = document.querySelector("section.projects");
+    const contact = document.querySelector("section.contact");
     const aboutNav = document.querySelector("div.aboutNavLink");
     const homeNav = document.querySelector("div.headerNavLink");
     const techNav = document.querySelector("div.techNavLink");
+    const projectNav = document.querySelector("div.projectNavLink");
+    const contactNav = document.querySelector("div.contactNavLink");
 
     const distanceFromTopSectionAbout =
       about.getBoundingClientRect().top;
-
     const distanceFromTopSectionTech =
-      tech.getBoundingClientRect().top;
+    tech.getBoundingClientRect().top;
+    const distanceFromTopSectionProjects =
+    projects.getBoundingClientRect().top;
+    const distanceFromTopSectionContact =
+    contact.getBoundingClientRect().top;
+
+    console.log(distanceFromTopSectionAbout,distanceFromTopSectionTech)
 
     //Navbar fix condition
     if (distanceFromTopSectionAbout < 40) {
@@ -56,23 +65,40 @@ function Header() {
     else {
       navbar.classList.remove("fixed-top");
     }
-
-    //Navbar
-
-    console.log(distanceFromTopSectionAbout,distanceFromTopSectionTech)
-    if (distanceFromTopSectionAbout < 40 && distanceFromTopSectionAbout > -550) {
+    if (distanceFromTopSectionAbout < 100 && distanceFromTopSectionTech > 10 && distanceFromTopSectionProjects > 10 && distanceFromTopSectionContact > 10) {
+      homeNav.classList.remove("active");
       aboutNav.classList.add("active");
-      homeNav.classList.remove("active");
       techNav.classList.remove("active");
+      projectNav.classList.remove("active");
+      contactNav.classList.remove("active");
     }
-    else if(distanceFromTopSectionAbout < -550){
-      aboutNav.classList.remove("active");
+    else if (distanceFromTopSectionTech < 0 && distanceFromTopSectionAbout < 10 && distanceFromTopSectionProjects > 10 && distanceFromTopSectionContact > 10) {
       homeNav.classList.remove("active");
-      techNav.classList.add("active");
-    } else {
       aboutNav.classList.remove("active");
-      homeNav.classList.add("active");
+      techNav.classList.add("active");
+      projectNav.classList.remove("active");
+      contactNav.classList.remove("active");
+    }
+    else if (distanceFromTopSectionTech < 0 && distanceFromTopSectionAbout < 10 && distanceFromTopSectionProjects < 10 && distanceFromTopSectionContact > 10) {
+      homeNav.classList.remove("active");
+      aboutNav.classList.remove("active");
       techNav.classList.remove("active");
+      projectNav.classList.add("active");
+      contactNav.classList.remove("active");
+    }
+    else if (distanceFromTopSectionTech < 0 && distanceFromTopSectionAbout < 10 && distanceFromTopSectionProjects < 10 && distanceFromTopSectionContact < 10) {
+      homeNav.classList.remove("active");
+      aboutNav.classList.remove("active");
+      techNav.classList.remove("active");
+      projectNav.classList.remove("active");
+      contactNav.classList.add("active");
+    }
+    else {
+      homeNav.classList.add("active");
+      aboutNav.classList.remove("active");
+      techNav.classList.remove("active");
+      projectNav.classList.remove("active");
+      contactNav.classList.remove("active");
     }
   });
 
@@ -80,8 +106,6 @@ function Header() {
     e.preventDefault();
     const navbar = document.querySelector("nav");
     const navDiv = document.querySelector("div.link-wrap");
-
-    console.log(navbar, navDiv)
 
     if (navDiv.className === "link-wrap") {
       navDiv.classList.add("mobile");
@@ -148,7 +172,7 @@ function Header() {
             <div className="page-link headerNavLink" ><a className="navLink" href="#header">Home</a></div>
             <div className="page-link aboutNavLink" ><a className="navLink" href="#about">about</a></div>
             <div className="page-link techNavLink" ><a className="navLink" href="#technologies">technologies</a></div>
-            <div className="page-link" >projects</div>
+            <div className="page-link projectNavLink" ><a className="navLink" href="#projects">projects</a></div>
             <div className="page-link contactNavLink" ><a className="navLink" href="#contact">contact</a></div>
           </div>
         </nav>

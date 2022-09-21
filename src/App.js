@@ -11,6 +11,7 @@ import About from './sections/about/About';
 import Technologies from './sections/technologies/Technologies';
 import Contact from './sections/contact/Contact';
 import Footer from './sections/footer/Footer';
+import Projects from './sections/projects/Projects';
 
 
 function App() {
@@ -48,6 +49,9 @@ function App() {
     </section>
     <section className="technologies" id='technologies'>
       <Technologies />
+    </section>
+    <section className="projects" id='projects'>
+      <Projects />
     </section>
     <section className="contact" id='contact'>
       <Contact />

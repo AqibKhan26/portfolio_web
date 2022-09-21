@@ -32,18 +32,18 @@ import logo from "../../../assets/images/logoTab.png"
 
 function CenteredFooter({ company, links, socials, light }) {
 
-  const renderLinks = links.map((link) => (
-    <MKTypography
-      key={link.name}
-      component={Link}
-      href={link.href}
-      variant="body2"
-      color={light ? "white" : "secondary"}
-      fontWeight="regular"
-    >
-      {link.name}
-    </MKTypography>
-  ));
+  // const renderLinks = links.map((link) => (
+  //   <MKTypography
+  //     key={link.name}
+  //     component={Link}
+  //     href={link.href}
+  //     variant="body2"
+  //     color={light ? "white" : "secondary"}
+  //     fontWeight="regular"
+  //   >
+  //     {link.name}
+  //   </MKTypography>
+  // ));
 
   const renderSocials = socials.map((social) => (
     <MKTypography

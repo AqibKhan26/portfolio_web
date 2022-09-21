@@ -16,16 +16,9 @@ Coded by www.creative-tim.com
 // prop-types is a library for typechecking of props.
 import PropTypes from "prop-types";
 
-// react-router-dom components
-import { Link } from "react-router-dom";
-
-// @mui material components
-import MuiLink from "@mui/material/Link";
-
 // Material Kit 2 React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
-import MKButton from "components/MKButton";
+import MKBox from "../../../components/MKBox";
+import MKTypography from "../../../components/MKTypography";
 
 function RotatingCard({ color, image, title, description, action }) {
   return (
@@ -59,27 +52,6 @@ function RotatingCard({ color, image, title, description, action }) {
         <MKTypography variant="body2" color="white" opacity={0.8}>
           {description}
         </MKTypography>
-        {action && (
-          <MKBox width="50%" mt={4} mb={2} mx="auto">
-            {action.type === "external" ? (
-              <MKButton
-                component={MuiLink}
-                href={action.route}
-                target="_blank"
-                rel="noreferrer"
-                color="white"
-                size="small"
-                fullWidth
-              >
-                {action.label}
-              </MKButton>
-            ) : (
-              <MKButton component={Link} to={action.route} color="white" size="small" fullWidth>
-                {action.label}
-              </MKButton>
-            )}
-          </MKBox>
-        )}
       </MKBox>
     </MKBox>
   );
