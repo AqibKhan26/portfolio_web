@@ -38,7 +38,7 @@ function PersonalProjects() {
                     </MKTypography>
                 </Grid>
                 <Grid container spacing={2} mt={4}>
-                    <Grid item xs={10} md={8} lg={4}>
+                    <Grid item xs={14} md={8} lg={4}>
                         <RotatingCard>
                             <RotatingCardFront
                                 image={solstice}/>
@@ -49,7 +49,7 @@ function PersonalProjects() {
                             />
                         </RotatingCard>
                     </Grid>
-                    <Grid item xs={10} md={8} lg={4}>
+                    <Grid item xs={14} md={8} lg={4}>
                         <RotatingCard>
                             <RotatingCardFront
                                 image={waterSpoutWallet}
@@ -61,7 +61,7 @@ function PersonalProjects() {
                             />
                         </RotatingCard>
                     </Grid>
-                    <Grid item xs={10} md={8} lg={4}>
+                    <Grid item xs={14} md={8} lg={4}>
                         <RotatingCard>
                             <RotatingCardFront
                                 image={uproar} />
