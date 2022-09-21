@@ -70,8 +70,8 @@ RotatingCardFront.propTypes = {
   ]),
   image: PropTypes.string.isRequired,
   icon: PropTypes.node,
-  title: PropTypes.node.isRequired,
-  description: PropTypes.node.isRequired,
+  title: PropTypes.node,
+  description: PropTypes.node,
 };
 
 export default RotatingCardFront;

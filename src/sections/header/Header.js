@@ -55,9 +55,7 @@ function Header() {
     projects.getBoundingClientRect().top;
     const distanceFromTopSectionContact =
     contact.getBoundingClientRect().top;
-
-    console.log(distanceFromTopSectionAbout,distanceFromTopSectionTech)
-
+    
     //Navbar fix condition
     if (distanceFromTopSectionAbout < 40) {
       navbar.classList.add("fixed-top");

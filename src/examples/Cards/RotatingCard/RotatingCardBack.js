@@ -84,7 +84,7 @@ RotatingCard.propTypes = {
       route: PropTypes.string.isRequired,
       label: PropTypes.string.isRequired,
     }),
-  ]).isRequired,
+  ]),
 };
 
 export default RotatingCard;
