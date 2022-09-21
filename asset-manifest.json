@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio_web/static/css/main.f53ee2bd.css",
-    "main.js": "/portfolio_web/static/js/main.75c4e3b4.js",
+    "main.css": "/portfolio_web/static/css/main.b0b393aa.css",
+    "main.js": "/portfolio_web/static/js/main.a972e803.js",
     "static/media/bgVideo.gif": "/portfolio_web/static/media/bgVideo.e2b651445030c0669759.gif",
     "static/media/rotating-card-bg-front.jpeg": "/portfolio_web/static/media/rotating-card-bg-front.bdcdfadc0dacb9bc5f23.jpeg",
     "static/media/wwwBg.jpg": "/portfolio_web/static/media/wwwBg.d5ba7878fa18e11f49cd.jpg",
@@ -30,11 +30,11 @@
     "static/media/javascript.svg": "/portfolio_web/static/media/javascript.cb6c28ae8b07ac4ffe29cee2352650dd.svg",
     "static/media/express.svg": "/portfolio_web/static/media/express.17d6aefdd7235ab2cf8881c1b03ad312.svg",
     "static/media/dots.svg": "/portfolio_web/static/media/dots.0eedaa2f9fa6b37de002b0397f47125d.svg",
-    "main.f53ee2bd.css.map": "/portfolio_web/static/css/main.f53ee2bd.css.map",
-    "main.75c4e3b4.js.map": "/portfolio_web/static/js/main.75c4e3b4.js.map"
+    "main.b0b393aa.css.map": "/portfolio_web/static/css/main.b0b393aa.css.map",
+    "main.a972e803.js.map": "/portfolio_web/static/js/main.a972e803.js.map"
   },
   "entrypoints": [
-    "static/css/main.f53ee2bd.css",
-    "static/js/main.75c4e3b4.js"
+    "static/css/main.b0b393aa.css",
+    "static/js/main.a972e803.js"
   ]
 }
