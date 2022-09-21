@@ -1,9 +1,13 @@
 // @mui material components
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
+import Snackbar from "@mui/material/Snackbar";
 
-import React, { useRef } from 'react';
+
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
+
+import CloseIcon from "@mui/icons-material/Close";
 // Material Kit 2 PRO React components
 import MKBox from "../../components/MKBox";
 import MKInput from "../../components/MKInput";
@@ -15,17 +19,91 @@ import bgImage from "../../assets/images/contactme.jpg";
 
 function Contact() {
     const form = useRef();
+    const userName = useRef();
+    const userEmail = useRef();
+    const message = useRef();
 
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_zp5bise', 'template_xs3so7s', form.current, 'm0rSpVWLEEmmFzz9z')
+        try {
+            emailjs.sendForm('service_zp5bise', 'template_xs3so7s', form.current, 'm0rSpVWLEEmmFzz9z')
             .then((result) => {
                 console.log(result.text);
             }, (error) => {
                 console.log(error.text);
             });
+            toggleSuccessSnackbar()
+        } catch {
+            toggleErrorSnackbar()
+        } finally {
+            e.target.reset()
+        }
+
     };
+
+    const [showSuccess, setShowSuccess] = useState(false);
+    const [showError, setShowError] = useState(false);
+
+    const toggleSuccessSnackbar = () => setShowSuccess(!showSuccess);
+    const toggleErrorSnackbar = () => setShowError(!showError);
+    
+    const toastStylesSuccess = ({
+      palette: { info },
+      borders: { borderRadius },
+      typography: { size },
+      boxShadows: { lg },
+    }) => ({
+      "& .MuiPaper-root": {
+        backgroundColor: "green",
+        borderRadius: borderRadius.lg,
+        fontSize: size.sm,
+        fontWeight: 400,
+        boxShadow: lg,
+        px: 2,
+        py: 0.5,
+      },
+    });
+
+    const toastStylesError = ({
+        palette: { info },
+        borders: { borderRadius },
+        typography: { size },
+        boxShadows: { lg },
+      }) => ({
+        "& .MuiPaper-root": {
+          backgroundColor: "red",
+          borderRadius: borderRadius.lg,
+          fontSize: size.sm,
+          fontWeight: 400,
+          boxShadow: lg,
+          px: 2,
+          py: 0.5,
+        },
+      });
+  
+    const toastTemplateSuccess = (
+      <MKBox display="flex" justifyContent="space-between" alignItems="center" color="white">
+        The message has been sent !! 
+        <CloseIcon
+          fontSize="medium"
+          sx={{ ml: 4, mr: -1, cursor: "pointer" }}
+          onClick={toggleSuccessSnackbar}
+        />
+      </MKBox>
+    );
+
+    const toastTemplateError = (
+        <MKBox display="flex" justifyContent="space-between" alignItems="center" color="white">
+          Message could not be sent, please contact via email.
+          <CloseIcon
+            fontSize="medium"
+            sx={{ ml: 4, mr: -1, cursor: "pointer" }}
+            onClick={toggleErrorSnackbar}
+          />
+        </MKBox>
+      );
+
     return (
         <MKBox component="section" py={{ xs: 0, lg: 6 }}>
             <Container>
@@ -60,6 +138,7 @@ function Contact() {
                                                     name="user_name"
                                                     InputLabelProps={{ shrink: true }}
                                                     fullWidth
+                                                    ref={userName}
                                                 />
                                             </Grid>
                                             <Grid item xs={12} pr={1} mb={3}>
@@ -70,6 +149,7 @@ function Contact() {
                                                     name="user_email"
                                                     InputLabelProps={{ shrink: true }}
                                                     fullWidth
+                                                    ref={userEmail}
                                                 />
                                             </Grid>
                                             <Grid item xs={12} pr={1} mb={3}>
@@ -82,6 +162,7 @@ function Contact() {
                                                     fullWidth
                                                     multiline
                                                     rows={6}
+                                                    ref={message}
                                                 />
                                             </Grid>
                                         </Grid>
@@ -162,6 +243,24 @@ function Contact() {
                         </Grid>
                     </MKBox>
                 </Grid>
+                <Snackbar
+                    anchorOrigin={{ vertical: "top", horizontal: "center" }}
+                    open={showSuccess}
+                    autoHideDuration={3000}
+                    onClose={toggleSuccessSnackbar}
+                    message={toastTemplateSuccess}
+                    action={toggleSuccessSnackbar}
+                    sx={toastStylesSuccess}
+                />
+                <Snackbar
+                    anchorOrigin={{ vertical: "top", horizontal: "center" }}
+                    open={showError}
+                    autoHideDuration={3000}
+                    onClose={toggleErrorSnackbar}
+                    message={toastTemplateError}
+                    action={toggleErrorSnackbar}
+                    sx={toastStylesError}
+                />
             </Container>
         </MKBox>
     );

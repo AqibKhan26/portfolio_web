@@ -55,7 +55,7 @@ function Header() {
     projects.getBoundingClientRect().top;
     const distanceFromTopSectionContact =
     contact.getBoundingClientRect().top;
-    
+
     //Navbar fix condition
     if (distanceFromTopSectionAbout < 40) {
       navbar.classList.add("fixed-top");
@@ -70,7 +70,7 @@ function Header() {
       projectNav.classList.remove("active");
       contactNav.classList.remove("active");
     }
-    else if (distanceFromTopSectionTech < 0 && distanceFromTopSectionAbout < 10 && distanceFromTopSectionProjects > 10 && distanceFromTopSectionContact > 10) {
+    else if (distanceFromTopSectionTech < 0 && distanceFromTopSectionAbout < 20 && distanceFromTopSectionProjects > 10 && distanceFromTopSectionContact > 10) {
       homeNav.classList.remove("active");
       aboutNav.classList.remove("active");
       techNav.classList.add("active");
