@@ -36,7 +36,7 @@ function ProfessionalProjects() {
                     </MKTypography>
                 </Grid>
                 <Grid container spacing={0} alignItems="center" sx={{ mt: 6 }}>
-                    <Grid item xs={12} md={4} sx={{ ml: "auto" }}>
+                    <Grid item xs={12} md={16} lg={4} sx={{ ml: "auto" }}>
                         <DefaultBackgroundCard
                             image={bgImage1}
                             label="website visitors"
@@ -49,7 +49,7 @@ function ProfessionalProjects() {
                             }}
                         />
                     </Grid>
-                    <Grid item xs={12} md={6} sx={{ mr: "auto", ml: { xs: 0, md: 6 } }}>
+                    <Grid item xs={12} md={14} lg={6} sx={{ mr: "auto", ml: { xs: 0, md: 6 } }}>
                         <Grid item xs={12} lg={8} sx={{ ml: { xs: -2, lg: "auto" }, mt: { xs: 6, lg: 0 } }}>
                             <Stack>
                                 <AboutUsOption
@@ -88,7 +88,7 @@ function ProfessionalProjects() {
                                     icon="fa-solid fa-4"
                                     content={
                                         <>
-                                            <b>Associate Software Developer, Data Transformation - Logistics 2:</b>
+                                            <b>Associate Software Developer, Data Transformation - Logistics 2 :</b>
                                             <br />
                                             Coordinated revamp of the existing support process by deploying chatbots positioned at the
                                             customers’ end using RPA and SAP Conversational AI and successgully reduced customer incident turnaround time to 5-7 minutes for 65% of customer-reported
