@@ -24,7 +24,7 @@ function About() {
                     pb={6}
                 >
                     <MKTypography variant="h1" mb={1} pb={2}>
-                        <u>Know Me Better !</u>
+                        <span className="aboutText" ><u>About</u></span>
                     </MKTypography>
                     <MKTypography variant="body1" color="text">
                         A driven problem-solver, I have worked in the software scene for three years. Collaborating with talented individuals

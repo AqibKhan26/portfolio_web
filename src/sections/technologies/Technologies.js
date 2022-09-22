@@ -41,7 +41,7 @@ function Technologies() {
           sx={{ mx: "auto", textAlign: "center" }}
         >
           <MKTypography variant="h1" mb={1}>
-            <u>Technologies I Can Work On</u>
+            <u>What i can help you with..</u>
           </MKTypography>
         </Grid>
         <Grid container spacing={5} sx={{ mt: 2 }}>

@@ -14,7 +14,7 @@ import MKButton from "../../components/MKButton";
 import MKTypography from "../../components/MKTypography";
 
 // Images
-import bgImage from "../../assets/videos/bgVideo.gif";
+import bgImage from "../../assets/videos/bgVideo_3.gif";
 
 function Header() {
 
@@ -145,7 +145,7 @@ function Header() {
             >
               <MKTypography
                 variant="h1"
-                color="white"
+                color="black"
                 mt={1} mb={6}
                 sx={({ breakpoints, typography: { size } }) => ({
                   [breakpoints.down("md")]: {
@@ -160,7 +160,7 @@ function Header() {
                 <span ref={typedJSRef} className="highlitedText" />
               </MKTypography>
               <a className="navLink" href="#about">
-                <MKButton variant="outlined" color="white" className="buttonMain">View My Work</MKButton></a>
+                <MKButton variant="outlined" color="black" className="buttonMain">View My Work</MKButton></a>
             </Grid>
           </Container>
         </MKBox>
