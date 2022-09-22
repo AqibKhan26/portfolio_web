@@ -1,7 +1,7 @@
 {
-  "name": "portfolio_web",
+  "name": "portfolio_website",
   "version": "0.1.0",
-  "homepage": "https://aqibkhan26.github.io/portfolio_web",
+  "homepage": "https://aqibkhan26.github.io/portfolio_website",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.7.0",
