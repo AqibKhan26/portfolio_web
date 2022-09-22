@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/portfolio_web/static/css/main.b0b393aa.css",
-    "main.js": "/portfolio_web/static/js/main.0b89c69e.js",
-    "static/media/bgVideo.gif": "/portfolio_web/static/media/bgVideo.e2b651445030c0669759.gif",
+    "main.css": "/portfolio_web/static/css/main.4ce5cfcc.css",
+    "main.js": "/portfolio_web/static/js/main.2e2ec60f.js",
+    "static/media/bgVideo_3.gif": "/portfolio_web/static/media/bgVideo_3.dfdc1b476b6417faf109.gif",
     "static/media/rotating-card-bg-front.jpeg": "/portfolio_web/static/media/rotating-card-bg-front.bdcdfadc0dacb9bc5f23.jpeg",
     "static/media/wwwBg.jpg": "/portfolio_web/static/media/wwwBg.d5ba7878fa18e11f49cd.jpg",
     "static/media/contactme.jpg": "/portfolio_web/static/media/contactme.bb89d838b863234d04ca.jpg",
@@ -30,11 +30,11 @@
     "static/media/javascript.svg": "/portfolio_web/static/media/javascript.cb6c28ae8b07ac4ffe29cee2352650dd.svg",
     "static/media/express.svg": "/portfolio_web/static/media/express.17d6aefdd7235ab2cf8881c1b03ad312.svg",
     "static/media/dots.svg": "/portfolio_web/static/media/dots.0eedaa2f9fa6b37de002b0397f47125d.svg",
-    "main.b0b393aa.css.map": "/portfolio_web/static/css/main.b0b393aa.css.map",
-    "main.0b89c69e.js.map": "/portfolio_web/static/js/main.0b89c69e.js.map"
+    "main.4ce5cfcc.css.map": "/portfolio_web/static/css/main.4ce5cfcc.css.map",
+    "main.2e2ec60f.js.map": "/portfolio_web/static/js/main.2e2ec60f.js.map"
   },
   "entrypoints": [
-    "static/css/main.b0b393aa.css",
-    "static/js/main.0b89c69e.js"
+    "static/css/main.4ce5cfcc.css",
+    "static/js/main.2e2ec60f.js"
   ]
 }
