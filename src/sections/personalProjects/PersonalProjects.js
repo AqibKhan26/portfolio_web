@@ -45,7 +45,7 @@ function PersonalProjects() {
                             <RotatingCardBack
                                 image={newsPaperBg}
                                 title="SOLSTICE"
-                                description="Solstice is a news agency business appication made using Java Applets. It provides users with faciclites to document and track subscriptions, Write and organize articles using the built in editor and much more.."
+                                description="Solstice is a news agency business appication made using Java Applets. It provides users with facilities to document and track subscriptions, Write and organize articles using the built in editor and much more.."
                             />
                         </RotatingCard>
                     </Grid>

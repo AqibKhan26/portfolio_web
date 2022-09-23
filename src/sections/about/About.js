@@ -27,7 +27,7 @@ function About() {
                         <span className="aboutText" ><u>About</u></span>
                     </MKTypography>
                     <MKTypography variant="body1" color="text">
-                        A driven problem-solver, I have worked in the software scene for three years. Collaborating with talented individuals
+                        A driven problem-solver, I have worked in the software industry for three years. Collaborating with talented individuals
                         around the globe, creating digital products for businesses and consumers. I'm confident, curious, and committed to upskilling 
                         myself one problem at a time.
                     </MKTypography>

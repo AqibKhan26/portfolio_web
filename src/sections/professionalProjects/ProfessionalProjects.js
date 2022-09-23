@@ -32,7 +32,7 @@ function ProfessionalProjects() {
                     sx={{ mx: "auto", textAlign: "center" }}
                 >
                     <MKTypography variant="h1" mb={1}>
-                        <u>Professional Projects</u>
+                        <u>Professional Experience</u>
                     </MKTypography>
                 </Grid>
                 <Grid container spacing={0} alignItems="center" sx={{ mt: 6 }}>
